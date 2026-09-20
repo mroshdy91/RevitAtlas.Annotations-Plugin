@@ -1,0 +1,31 @@
+{
+  "name": "atlas-annotations",
+  "version": "0.1.0-beta.3",
+  "description": "Add and edit Revit dimensions, tags, text and drawing annotations. Requires Atlas Core.",
+  "author": {
+    "name": "ROSHDY"
+  },
+  "homepage": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin",
+  "repository": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin",
+  "license": "LicenseRef-Atlas-Free-Use",
+  "keywords": [
+    "revit",
+    "bim",
+    "annotations"
+  ],
+  "mcpServers": {
+    "atlas_annotations": {
+      "type": "stdio",
+      "command": "powershell.exe",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-NonInteractive",
+        "-File",
+        "${ZCODE_PLUGIN_ROOT}/scripts/atlas-mcp.ps1",
+        "-Surface",
+        "annotations"
+      ]
+    }
+  }
+}

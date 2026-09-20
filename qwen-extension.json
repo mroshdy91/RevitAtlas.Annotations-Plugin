@@ -1,14 +1,16 @@
 {
+  "name": "atlas-annotations",
+  "version": "0.1.0-beta.3",
+  "description": "Add and edit Revit dimensions, tags, text and drawing annotations. Requires Atlas Core.",
   "mcpServers": {
     "atlas_annotations": {
-      "type": "stdio",
       "command": "powershell.exe",
       "args": [
         "-NoLogo",
         "-NoProfile",
         "-NonInteractive",
         "-File",
-        "${CLAUDE_PLUGIN_ROOT}/scripts/atlas-mcp.ps1",
+        "${extensionPath}/scripts/atlas-mcp.ps1",
         "-Surface",
         "annotations"
       ]
