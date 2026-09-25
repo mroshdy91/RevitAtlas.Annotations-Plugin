@@ -18,7 +18,7 @@ Use `spatial_tag_number` for a requested room/space number without prescribed la
 
 For edits, inspect `drawing_dependencies` and adopt existing annotations explicitly. Replacement needs the expected native identity; invalid references or removal of unrelated dependents roll back. Semantic keys persist through supported replacements. Field discovery returns exact parameter identities and current values: use guarded edits, not matching names alone.
 
-This candidate requires Atlas Core and a matching admitted native engine. It can use existing project views without Atlas Sheets. Family is only needed when creating new annotation families, not using existing ones.
+This plugin requires Atlas Core and a matching admitted native engine. It can use existing project views without Atlas Sheets. Family is only needed when creating new annotation families, not using existing ones.
 
 Start from the engineering brief and inspect available views, annotation types and targets through Core. Prefer compatible project styles. Discover `RoomTagType` and `SpaceTagType` explicitly; they are not ordinary `FamilySymbol` types. If suitable content is absent, inspect Core `drawing_standards` for installation-local architectural/MEP content, then use `load_standard` with the selected family name and template hash. Supplied RFAs use `load` with provenance. No Autodesk content is redistributed by Atlas. Discover the exact action contract through `atlas_catalog`; unsupported combinations are not an invitation to use scripts or rewrite records.
 
